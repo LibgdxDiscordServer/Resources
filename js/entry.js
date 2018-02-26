@@ -1,24 +1,23 @@
-var weekLoaded = "";
+var monthLoaded = "";
 
-function loadEntry(week){
-    if(weekLoaded == week){
+function loadEntry(month){
+    if(monthLoaded == month){
         console.log("alreaded loaded");
     }
     else{
 		var result = $.ajax({
 			type: 'GET',
-			url: "assets/feb2018.json",
+			url: "assets/" + month + ".json",
 			dataType: 'json',
 			success: function(data){
-				createCardGroup(data, week);
+				createCardGroup(data, month);
 			}
 		});	
     }
 }
 
-function createCardGroup(result, week){
-    weekLoaded = week;
-    console.log("week set");
+function createCardGroup(result, month){
+    weekLoaded = month;
 
     var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
     var deck = '<div class="card-group padding" style="width: 50rem;">';
