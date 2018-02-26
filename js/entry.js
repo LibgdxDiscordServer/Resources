@@ -5,7 +5,14 @@ function loadEntry(path){
         console.log("alreaded loaded");
     }
     else{
-			
+		$.ajax({
+			type: 'GET'.
+			url: 'assets/feb2018.json',
+			dataType: 'json',
+			success: function(data){
+				console.log(data);
+			}
+		});	
 		
 		/*$.getJSON("assets/feb2018.json", function(result){
     
