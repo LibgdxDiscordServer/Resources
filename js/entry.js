@@ -10,6 +10,7 @@ function loadEntry(path){
 			url: "assets/feb2018.json",
 			dataType: "jsonp",
 			success: function(result){
+				console.log("found");
 				var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
 				var deck = '<div class="card-group padding" style="width: 50rem;">';
     
@@ -25,7 +26,9 @@ function loadEntry(path){
 				}
 				deck += '</div>';
                 
-				document.getElementById("entry").innerHTML = deck;
+				
+				document.getElementById("entry").appendChild(deck);
+				//document.getElementById("entry").innerHTML = deck;
 			}
 		});
 		
