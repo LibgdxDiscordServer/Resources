@@ -8,10 +8,9 @@ function loadEntry(path){
 		$.ajax({
 			type: "GET",
 			url: "assets/feb2018.json",
-			dataType: "json",
 			success: function(data){
 				var result = data;
-				console.log("found");
+				console.log(data);
 				var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
 				var deck = '<div class="card-group padding" style="width: 50rem;">';
     
