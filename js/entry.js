@@ -6,7 +6,7 @@ function loadEntry(path){
     }
     else{
 		$.ajax({
-			type: 'GET'.
+			type: 'GET',
 			url: 'assets/feb2018.json',
 			dataType: 'json',
 			success: function(data){
