@@ -27,9 +27,7 @@ function loadEntry(path){
 				}
 				deck += '</div>';
                 
-				
-				document.getElementById("entry").appendChild(deck);
-				//document.getElementById("entry").innerHTML = deck;
+				document.getElementById("entry").innerHTML = deck;
 			}
 		});
 		
