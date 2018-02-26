@@ -5,9 +5,7 @@ function loadEntry(path){
         console.log("alreaded loaded");
     }
     else{
-		var test = $.getJSON("assets/feb2018.json", function(data){
 			
-		});	
 		
 		/*$.getJSON("assets/feb2018.json", function(result){
     
