@@ -1,42 +1,41 @@
 var weekLoaded = "";
 
-function loadEntry(path){
-    if(weekLoaded == path){
+function loadEntry(week){
+    if(weekLoaded == week){
         console.log("alreaded loaded");
     }
     else{
-		$.ajax({
+		var result = $.ajax({
 			type: 'GET',
-			url: 'assets/feb2018.json',
+			url: "assets/feb2018.json",
 			dataType: 'json',
 			success: function(data){
-				console.log(data);
+				createCardGroup(data, week);
 			}
 		});	
-		
-		/*$.getJSON("assets/feb2018.json", function(result){
-    
-            var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
-            var deck = '<div class="card-group padding" style="width: 50rem;">';
-    
-            for(var i = 0; i < result.length; i++){
-                title = result[i].title;
-                description = result[i].description;
-                sourceLink = result[i].sourceLink;
-                playOnlineLink = result[i].playOnlineLink;
-                jarLink = result[i].jarLink;
-                playStoreLink = result[i].playStoreLink;
-                previewImage = result[i].previewImage;
-                deck += createCard(title, author, description + description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage);
-            }
-            deck += '</div>';
-                
-            document.getElementById("entry").innerHTML = deck;
-    
-            weekLoaded = path;
-            console.log("week set");
-        });*/
     }
+}
+
+function createCardGroup(result, week){
+    weekLoaded = week;
+    console.log("week set");
+
+    var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
+    var deck = '<div class="card-group padding" style="width: 50rem;">';
+
+    for(var i = 0; i < result.length; i++){
+        title = result[i].title;
+        description = result[i].description;
+        sourceLink = result[i].sourceLink;
+        playOnlineLink = result[i].playOnlineLink;
+        jarLink = result[i].jarLink;
+        playStoreLink = result[i].playStoreLink;
+        previewImage = result[i].previewImage;
+        deck += createCard(title, author, description + description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage);
+    }
+    deck += '</div>';
+        
+    document.getElementById("entry").innerHTML = deck;
 }
 
 function createCard(title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, image) {
