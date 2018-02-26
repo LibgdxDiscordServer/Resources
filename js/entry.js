@@ -5,7 +5,8 @@ function loadEntry(path){
         console.log("alreaded loaded");
     }
     else{
-        $.getJSON("assets/" + path + ".json", function(result){
+		$.getJSON("assets/feb2018.json", function(result){
+        //$.getJSON("assets/" + path + ".json", function(result){
     
             var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
             var deck = '<div class="card-group padding" style="width: 50rem;">';
