@@ -1,0 +1,32 @@
+[
+  {
+    "title": "game from hell",
+    "author": "john",
+    "description": "this is a game about nothing",
+	"sourceLink" : "www.github.com",
+	"playOnlineLink" : "itch.io",
+	"jarLink" : "github.com",
+	"playStoreLink" : "google.com",
+	"previewImage" : ""
+  },
+  {
+    "title": "game 2",
+    "author": "john 2.0",
+    "description": "this is a game about nothing",
+	"sourceLink" : "",
+	"playOnlineLink" : "itch.io",
+	"jarLink" : "github.com",
+	"playStoreLink" : "google.com",
+	"previewImage" : "http://lorempixel.com/output/food-q-c-150-150-4.jpg"
+  },
+  {
+    "title": "game 3",
+    "author": "john 2.0",
+    "description": "this is a game about nothing",
+	"sourceLink" : "github.com",
+	"playOnlineLink" : "itch.io",
+	"jarLink" : "github.com",
+	"playStoreLink" : "google.com",
+	"previewImage" : "http://lorempixel.com/output/food-q-c-150-150-4.jpg"
+  }
+]

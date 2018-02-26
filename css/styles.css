@@ -4,3 +4,17 @@ body {
 #blackMenu {
   background-color: black;
   color: white; }
+
+.cardImage {
+  max-width: 150px;
+  max-height: 150px; }
+
+.padding {
+  margin: 20px;
+  margin-top: 20px; }
+
+.linkPadding {
+  padding: 2px; }
+
+.noBreak {
+  white-space: nowrap; }
