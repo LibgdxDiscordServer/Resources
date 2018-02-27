@@ -21,15 +21,15 @@ function createCardGroup(result, month){
 
     var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
     var deck = '<div class="card-group padding" style="width: 50rem;">';
-
+	
     for(var i = 0; i < result.length; i++){
-        title = result[i].title;
-        description = result[i].description;
-        sourceLink = result[i].sourceLink;
-        playOnlineLink = result[i].playOnlineLink;
-        jarLink = result[i].jarLink;
-        playStoreLink = result[i].playStoreLink;
-        previewImage = result[i].previewImage;
+        title = result[i].Title;
+        description = result[i].Description;
+        sourceLink = result[i].SourceLink;
+        playOnlineLink = result[i].PlayOnlineLink;
+        jarLink = result[i].JarLink;
+        playStoreLink = result[i].PlayStoreLink;
+        previewImage = result[i].PreviewImage;
         deck += createCard(title, author, description + description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage);
     }
     deck += '</div>';
@@ -48,6 +48,8 @@ function createCard(title, author, description, sourceLink, playOnlineLink, jarL
 
     //create the title
     card += '<h3 class="card-title">' + capitalizeEveryWord(title) + '</h3>';
+	
+	card += '<h4 class="card-subtitle">' + capitalizeEveryWord(author) + '</h4>';
 
     //create the description
     card += '<p class="card-text">' + description + '</p>';

@@ -1,32 +1,72 @@
 [
   {
-    "title": "game from hell",
-    "author": "john",
-    "description": "this is a game about nothing",
-	"sourceLink" : "www.github.com",
-	"playOnlineLink" : "itch.io",
-	"jarLink" : "github.com",
-	"playStoreLink" : "google.com",
-	"previewImage" : ""
+    "Title": "R.G. Butts",
+    "Author": "Peanut Panda",
+    "Description": "The maniacal swimmers are coming towards you! Push them back where they came from by pressing the button with the correct color.",
+    "SourceLink": "https://bitbucket.org/BenW1980/r.g.-butts",
+    "PlayOnlineLink": "",
+    "JarLink": "",
+    "PlayStoreLink": "https://play.google.com/store/apps/details?id=game.peanutpanda.b3c3",
+    "PreviewImage": "https://drive.google.com/open?authuser=1&usp=forms_web&id=1qx3cteZxVKQgRj_8xW7ZgXrzuy6tS5_0"
   },
   {
-    "title": "game 2",
-    "author": "john 2.0",
-    "description": "this is a game about nothing",
-	"sourceLink" : "",
-	"playOnlineLink" : "itch.io",
-	"jarLink" : "github.com",
-	"playStoreLink" : "google.com",
-	"previewImage" : "http://lorempixel.com/output/food-q-c-150-150-4.jpg"
+    "Title": "Biohazard",
+    "Author": "mgsx",
+    "Description": "",
+    "SourceLink": "https://github.com/mgsx-dev/biohazard",
+    "PlayOnlineLink": "https://mgsx.itch.io/biohazard",
+    "JarLink": "https://mgsx.itch.io/biohazard/purchase",
+    "PlayStoreLink": "",
+    "PreviewImage": "https://drive.google.com/open?authuser=1&usp=forms_web&id=1EqOAsHSrjmRJR0kupg2NfmFYk14Ikiwl"
   },
   {
-    "title": "game 3",
-    "author": "john 2.0",
-    "description": "this is a game about nothing",
-	"sourceLink" : "github.com",
-	"playOnlineLink" : "itch.io",
-	"jarLink" : "github.com",
-	"playStoreLink" : "google.com",
-	"previewImage" : "http://lorempixel.com/output/food-q-c-150-150-4.jpg"
+    "Title": "Critters",
+    "Author": "Mark \"Wilds\" van der Wal",
+    "Description": "You control critters! nothing else, little tech demo",
+    "SourceLink": "https://github.com/MarkWilds/libgdx-gamejam1",
+    "PlayOnlineLink": "",
+    "JarLink": "https://github.com/MarkWilds/libgdx-gamejam1/blob/master/critters-0.0001.jar",
+    "PlayStoreLink": "",
+    "PreviewImage": "https://drive.google.com/open?authuser=1&usp=forms_web&id=11Mrp6bT9SvXiQTRltQWAK_u1Xf2cUhaQ"
+  },
+  {
+    "Title": "ThreeFish",
+    "Author": "tecksup",
+    "Description": "Press three buttons to catch a fish and rack up a score!!",
+    "SourceLink": "https://github.com/TheCubeCast/ThreeColors",
+    "PlayOnlineLink": "",
+    "JarLink": "https://dev.thecubecast.com/content/Three_Button_Fishing/ThreeFish.zip",
+    "PlayStoreLink": "",
+    "PreviewImage": "https://drive.google.com/open?authuser=1&usp=forms_web&id=1FxV85Jd-IN_qGPgvVVNFkFCrry8mtWlx"
+  },
+  {
+    "Title": "Butt Bounce",
+    "Author": "Bamboo Bandit",
+    "Description": "A small desktop/android app about bouncing a butt!",
+    "SourceLink": "",
+    "PlayOnline Link": "",
+    "JarLink": "https://drive.google.com/file/d/1Y7XeMgNRh_vSjsgBSbVoaLb96V3UTTsh/view?usp=sharing",
+    "PlayStoreLink": "",
+    "PreviewImage": "https://drive.google.com/open?authuser=1&usp=forms_web&id=1CraG7rDmj8wKvPIpjbF-M3RCNS1OEC8d"
+  },
+  {
+    "Title": "Conqueror",
+    "Author": "Wouter Buckens",
+    "Description": "In Conqueror, you don't control your army directly. Instead, every turn you'll have to issue new orders to make your army do what you want to.",
+    "SourceLink": "https://github.com/woubuc/conqueror",
+    "PlayOnlineLink": "https://woubuc.itch.io/conqueror",
+    "JarLink": "https://github.com/woubuc/conqueror/releases/tag/v0.1.0",
+    "PlayStoreLink": "",
+    "PreviewImage": "https://drive.google.com/open?authuser=1&usp=forms_web&id=1qEyK4wdkeigKRYrJfV3THdGte1qO964Z"
+  },
+  {
+    "Title": "Collect All The Bits!",
+    "Author": "Polydus",
+    "Description": "How to play: Change your color with the buttons. You attract bits of the same color and repel others. Gain points by herding the right color bits into the pit!",
+    "SourceLink": "https://github.com/Polydus/Collect-All-The-Bits",
+    "PlayOnlineLink": "",
+    "JarLink": "",
+    "PlayStoreLink": "https://play.google.com/store/apps/details?id=com.polydus.threecolor3button&hl=en",
+    "PreviewImage": "https://drive.google.com/open?authuser=1&usp=forms_web&id=142JsbyThjbqgTucdlRUO0JTsFwWFdqxL"
   }
 ]
