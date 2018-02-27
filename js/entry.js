@@ -42,7 +42,7 @@ function createCardGroup(result, week){
         numberOfCardsInRow++;
 
         //create column
-        deck += '<div class="col-sm">';
+        deck += '<div class="col-sm-4">';
         //create card
         deck += createCard(title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage);
         //end column
