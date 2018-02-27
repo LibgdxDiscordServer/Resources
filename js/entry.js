@@ -24,7 +24,7 @@ function createCardGroup(result, week){
     //start group
     var deck = '<div class="card-group padding">';
     //start row
-    deck += '<div class="row">';
+    //deck += '<div class="row">';
     
     var maxNumberOfCardsPerRow = 3;
     var numberOfCardsInRow;
@@ -52,13 +52,13 @@ function createCardGroup(result, week){
         if(numberOfCardsInRow == maxNumberOfCardsPerRow){
             numberOfCardsInRow = 0;
             //end row
-            deck += '</div>';
+            //deck += '</div>';
             //start row
-            deck += '<div class="row">';
+            //deck += '<div class="row">';
         }
     }
     //end row
-    deck += '</div>';
+    //deck += '</div>';
     //end group
     deck += '</div>';
         
