@@ -1,37 +1,65 @@
-var monthLoaded = "";
+var weekLoaded = "";
 
-function loadEntry(month){
-    if(monthLoaded == month){
+function loadEntry(week){
+    if(weekLoaded == week){
         console.log("alreaded loaded");
     }
     else{
-		var result = $.ajax({
-			type: 'GET',
-			url: "assets/" + month + ".json",
-			dataType: 'json',
-			success: function(data){
-				createCardGroup(data, month);
-			}
-		});	
+        $.ajax({
+            type: 'GET',
+            url: 'assets/feb2018.json',
+            dataType: 'json',
+            success: function(data){
+                createCardGroup(data, week);
+            }
+        });
     }
 }
 
-function createCardGroup(result, month){
-    weekLoaded = month;
+function createCardGroup(result, week){
+    weekLoaded = week;
+    console.log("week set");
 
     var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
-    var deck = '<div class="card-group padding" style="width: 50rem;">';
-	
+    //start group
+    var deck = '<div class="card-group padding mx-auto" style="width: 75rem;">';
+    //start row
+    deck += '<div class="row">';
+    
+    var maxNumberOfCardsPerRow = 2;
+    var numberOfCardsInRow;
+    
     for(var i = 0; i < result.length; i++){
         title = result[i].Title;
+        author = result[i].Author;
         description = result[i].Description;
         sourceLink = result[i].SourceLink;
         playOnlineLink = result[i].PlayOnlineLink;
         jarLink = result[i].JarLink;
         playStoreLink = result[i].PlayStoreLink;
         previewImage = result[i].PreviewImage;
-        deck += createCard(title, author, description + description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage);
+
+        numberOfCardsInRow++;
+
+        //create column
+        deck += '<div class="col-sm-4">';
+        //create card
+        deck += createCard(title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage);
+        //end column
+        deck += '</div>';
+
+        //if we reach the max number of cards per row start a new row
+        if(numberOfCardsInRow == maxNumberOfCardsPerRow){
+            numberOfCardsInRow = 0;
+            //end row
+            deck += '</div>';
+            //start row
+            deck += '<div class="row">';
+        }
     }
+    //end row
+    deck += '</div>';
+    //end group
     deck += '</div>';
         
     document.getElementById("entry").innerHTML = deck;
@@ -48,8 +76,8 @@ function createCard(title, author, description, sourceLink, playOnlineLink, jarL
 
     //create the title
     card += '<h3 class="card-title">' + capitalizeEveryWord(title) + '</h3>';
-	
-	//card += '<h4 class="card-subtitle">' + capitalizeEveryWord(author) + '</h4>';
+
+    card += '<h5 class="card-subtitle text-muted">' + capitalizeEveryWord(author) + '</h5>';
 
     //create the description
     card += '<p class="card-text">' + description + '</p>';
