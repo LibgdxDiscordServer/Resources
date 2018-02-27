@@ -26,7 +26,7 @@ function createCardGroup(result, week){
     //start row
     deck += '<div class="row">';
     
-    var maxNumberOfCardsPerRow = 2;
+    var maxNumberOfCardsPerRow = 3;
     var numberOfCardsInRow;
     
     for(var i = 0; i < result.length; i++){
