@@ -49,7 +49,7 @@ function createCard(title, author, description, sourceLink, playOnlineLink, jarL
     //create the title
     card += '<h3 class="card-title">' + capitalizeEveryWord(title) + '</h3>';
 	
-	card += '<h4 class="card-subtitle">' + capitalizeEveryWord(author) + '</h4>';
+	//card += '<h4 class="card-subtitle">' + capitalizeEveryWord(author) + '</h4>';
 
     //create the description
     card += '<p class="card-text">' + description + '</p>';
