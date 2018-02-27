@@ -167,7 +167,7 @@ function capitalizeEveryWord(text){
 
 function isPropperLink(link){
     //is a propper link
-    if(link.search("https://www.") != -1 || link.search("http://www.") != -1){
+    if(link.search("https://") != -1 || link.search("http://") != -1){
         console.log("is proper link");
         return link;
     }
