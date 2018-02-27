@@ -22,7 +22,7 @@ function createCardGroup(result, week){
 
     var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
     //start group
-    var deck = '<div class="card-group padding mx-auto" style="width: 75rem;">';
+    var deck = '<div class="card-group padding mx-auto" style="width: 50rem;">';
     //start row
     deck += '<div class="row">';
     
