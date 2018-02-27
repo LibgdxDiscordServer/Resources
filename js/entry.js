@@ -20,7 +20,49 @@ function createCardGroup(result, week){
     weekLoaded = week;
     console.log("week set");
 
-    var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
+	var deck = "", title = "", author = "", description = "", sourceLink = "", playOnlineLink = "", jarLink = "", playStoreLink = "", previewImage = "";
+    var maxNumberOfCardsPerRow = 3;
+    var numberOfCardsInRow = 0;
+    var amountOfCards = 4;
+    var i = 0;
+    var newRow = true;
+
+    while(i < result.length){
+        if(newRow){
+            newRow = false;
+            deck += '<div class="row">';
+            deck += '<div class="col">';
+            deck += '<div class="card-deck mx-auto" style="width: 70rem;">';
+        }
+
+        title = result[i].Title;
+        author = result[i].Author;
+        description = result[i].Description;
+        sourceLink = result[i].SourceLink;
+        playOnlineLink = result[i].PlayOnlineLink;
+        jarLink = result[i].JarLink;
+        playStoreLink = result[i].PlayStoreLink;
+        previewImage = result[i].PreviewImage;
+        deck += createCard(title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage);
+        i++;
+        numberOfCardsInRow++;
+
+        if(numberOfCardsInRow == maxNumberOfCardsPerRow){
+            newRow = true;
+            numberOfCardsInRow = 0;
+            deck += '</div>';
+            deck += '</div>';
+            deck += '</div>';
+        }
+    }
+
+    if(newRow == false){
+        deck += '</div>';
+        deck += '</div>';
+        deck += '</div>';
+    }
+	
+    /*var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
     //start group
     var deck = '<div class="card-group padding" style="width: 50rem;">';
     //start row
@@ -60,7 +102,7 @@ function createCardGroup(result, week){
     //end row
     deck += '</div>';
     //end group
-    deck += '</div>';
+    deck += '</div>';*/
         
     document.getElementById("entry").innerHTML = deck;
 }
