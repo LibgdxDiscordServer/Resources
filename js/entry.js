@@ -22,9 +22,9 @@ function createCardGroup(result, week){
 
     var title, author, description, sourceLink, playOnlineLink, jarLink, playStoreLink, previewImage;
     //start group
-    var deck = '<div class="card-group padding">';
+    var deck = '<div class="card-group padding" style="width: 100rem;">';
     //start row
-    //deck += '<div class="row">';
+    deck += '<div class="row">';
     
     var maxNumberOfCardsPerRow = 3;
     var numberOfCardsInRow;
@@ -52,13 +52,13 @@ function createCardGroup(result, week){
         if(numberOfCardsInRow == maxNumberOfCardsPerRow){
             numberOfCardsInRow = 0;
             //end row
-            //deck += '</div>';
+            deck += '</div>';
             //start row
-            //deck += '<div class="row">';
+            deck += '<div class="row">';
         }
     }
     //end row
-    //deck += '</div>';
+    deck += '</div>';
     //end group
     deck += '</div>';
         
