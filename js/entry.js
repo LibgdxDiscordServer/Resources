@@ -126,25 +126,25 @@ function createCard(title, author, description, sourceLink, playOnlineLink, jarL
 
     //create the source link
     if(sourceLink.length > 0){
-        sourceLink = isPropperLink(sourceLink);
+        //sourceLink = isPropperLink(sourceLink);
         card += '<a href="' + sourceLink + '" class="card-link" target="_blank">' + "Source" + '</a>';
     }
     
     //create the play online link
     if(playOnlineLink.length > 0){
-        playOnlineLink = isPropperLink(playOnlineLink);
+        //playOnlineLink = isPropperLink(playOnlineLink);
         card += '<a href="' + playOnlineLink + '" class="card-link" target="_blank">' + "<br>PlayOnline" + '</a>';
     }
     
     //create the jar link
     if(jarLink.length > 0){
-        jarLink = isPropperLink(jarLink);
+        //jarLink = isPropperLink(jarLink);
         card += '<a href="' + jarLink + '" class="card-link" target="_blank">' + "<br>Jar" + '</a>';
     }
     
     //create the play store link
     if(playStoreLink.length > 0){
-        playStoreLink = isPropperLink(playStoreLink);
+        //playStoreLink = isPropperLink(playStoreLink);
         card += '<a href="' + playStoreLink + '" class="card-link" target="_blank">' + "<br>PlayStore" + '</a>';
     }
 
@@ -165,6 +165,7 @@ function capitalizeEveryWord(text){
     .join(' ');
 }
 
+//needs to be fixed
 function isPropperLink(link){
     //is a propper link
     if(link.search("https://") != -1 || link.search("http://") != -1){
