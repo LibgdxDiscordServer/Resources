@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top bg-light">
+<nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
     <a class="navbar-brand">
         <img src="assets/logo.svg" width="auto" height="25">
     </a>
@@ -10,27 +10,35 @@
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="navbar-nav mr-auto">
           
-            <li class="nav-item">
-                <!-- <a class="btn nav-link" data-toggle="collapse" href="top" data-target="#collapseCalender" aria-controls="collapseCalender">Calendar</a> -->
-                    <!-- Calender -->
-                
-                <!-- <a class="nav-link btn-link" href="#collapseCelendar">Calender</a> -->
-            </li>
-
-            <li class="nav-item">
-                <!-- <a class="nav-link" href="#">Idea Submission</a> -->
-           
-            </li>
-           
-            <li class="nav-item">
-                <!-- <a class="nav-link" href="#">Jam Submission</a> -->
-            </li>
-           
-            <li class="nav-item">
-                <!-- <a class="nav-link" href="#">View Submissions</a> -->
-          
-            </li>
+		  <!-- dropdown -->
+			<ul class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown">Submissions</a> 
+			
+				<!-- year -->
+				<ul class="dropdown-menu">
+					<!-- 2018 -->
+					<li class="dropdown-submenu">
+						<a class="sub dropdown-item" data-toggle="dropdown">2018</a>
+						<ul class="dropdown-menu">
+							<a class="dropdown-item" onclick='loadEntry("feb2018")' href="#Feb2018">February</a>
+						</ul>
+					</li>
+					
+				</ul>
+			</ul>
+			
         </ul>
     </div>
 </nav>
+
+<script>
+    $(document).ready(function(){
+        $('.dropdown-submenu a.sub').on("click", function(e){
+            $(this).parent().parent().find('ul').hide();
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+        e.preventDefault();
+         });
+    });   
+</script>
     

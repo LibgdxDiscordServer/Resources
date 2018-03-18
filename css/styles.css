@@ -18,3 +18,53 @@ body {
 
 .noBreak {
   white-space: nowrap; }
+
+.dropdown-submenu {
+  position: relative; }
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px; }
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block; }
+
+.dropdown {
+  list-style: none;
+  padding: 10px;
+  display: inline-block; }
+
+.dropdown .nav-link {
+  color: #fff;
+  text-decoration: none; }
+
+.dropdown .dropdown-menu a {
+  color: #000;
+  text-decoration: none; }
+
+.dropdown .btn {
+  background: green;
+  color: #fff; }
+
+.dropdown .btn:hover {
+  background: cyan;
+  color: #000; }
+
+.dropdown .btn:active {
+  background: cyan;
+  color: #000; }
+
+.dropdown .btn:focus {
+  background: cyan;
+  color: #000; }
+
+.dropdown-menu .dropdown-item {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 5px; }
+
+.dropdown .dropdown-menu a:hover {
+  color: white;
+  background-color: darkgrey;
+  border-color: white; }

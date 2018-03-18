@@ -7,7 +7,7 @@ function loadEntry(week){
     else{
         $.ajax({
             type: 'GET',
-            url: 'assets/feb2018.json',
+            url: 'assets/' + week + '.json',
             dataType: 'json',
             success: function(data){
                 createCardGroup(data, week);
