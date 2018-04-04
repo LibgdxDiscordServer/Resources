@@ -3,40 +3,40 @@
     "Title": "Rainy Day!",
     "Author": "Theresa Forster (Theresajayne)",
     "Description": "You have to walk down the Road without splashing in the puddles",
-    "Source Link": "https://github.com/theresajayne/RainyDay",
-    "Play Online Link": "",
-    "Jar Link": "https://1drv.ms/u/s!AvfQLwt-xg_0mXqaH03HDsfK9191",
-    "PlayStore Link": "",
-    "Preview Image": ""
+    "SourceLink": "https://github.com/theresajayne/RainyDay",
+    "PlayOnlineLink": "",
+    "JarLink": "https://1drv.ms/u/s!AvfQLwt-xg_0mXqaH03HDsfK9191",
+    "PlayStoreLink": "",
+    "PreviewImage": ""
   },
   {
     "Title": "Ghosts of the rain",
     "Author": "Mgsx",
     "Description": "",
-    "Source Link": "https://github.com/mgsx-dev/ghosts-of-the-rain",
-    "Play Online Link": "",
-    "Jar Link": "https://mgsx.itch.io/ghosts-of-the-rain",
-    "PlayStore Link": "",
-    "Preview Image": "https://drive.google.com/uc?export=download&id=1ei64QTmGbaKygaIHmFAshSKFd8B0RI-C"
+    "SourceLink": "https://github.com/mgsx-dev/ghosts-of-the-rain",
+    "PlayOnlineLink": "",
+    "JarLink": "https://mgsx.itch.io/ghosts-of-the-rain",
+    "PlayStoreLink": "",
+    "PreviewImage": "https://drive.google.com/uc?export=download&id=1ei64QTmGbaKygaIHmFAshSKFd8B0RI-C"
   },
   {
     "Title": "Neon Rain",
     "Author": "John",
     "Description": "Dodge the falling Neon Rain Drops!!",
-    "Source Link": "https://github.com/JohnGDX/NeonRain",
-    "Play Online Link": "",
-    "Jar Link": "https://drive.google.com/file/d/1j5lY8Ft92XsARlYjdjI9YCWp0UV5smmg/view?usp=sharing",
-    "PlayStore Link": "",
-    "Preview Image": "https://drive.google.com/uc?export=download&id=1oQuDSYBPW8UqWNBPOz3qoNhZUemzxhEJ"
+    "SourceLink": "https://github.com/JohnGDX/NeonRain",
+    "PlayOnlineLink": "",
+    "JarLink": "https://drive.google.com/file/d/1j5lY8Ft92XsARlYjdjI9YCWp0UV5smmg/view?usp=sharing",
+    "PlayStoreLink": "",
+    "PreviewImage": "https://drive.google.com/uc?export=download&id=1oQuDSYBPW8UqWNBPOz3qoNhZUemzxhEJ"
   },
   {
     "Title": "Bouncy Raindrops",
     "Author": "Vivid Turtle",
     "Description": "A bucket game but raindrops bounce off a 2hu's umbrella",
-    "Source Link": "https://github.com/Tetawex/bouncy-raindrops",
-    "Play Online Link": "https://vivid-turtle.itch.io/bouncy-raindrops",
-    "Jar Link": "",
-    "PlayStore Link": "",
-    "Preview Image": "https://drive.google.com/uc?export=download&id=1enyL6pvd_cDJqcn9cwq4JkEG1x_9faAu"
+    "SourceLink": "https://github.com/Tetawex/bouncy-raindrops",
+    "PlayOnlineLink": "https://vivid-turtle.itch.io/bouncy-raindrops",
+    "JarLink": "",
+    "PlayStoreLink": "",
+    "PreviewImage": "https://drive.google.com/uc?export=download&id=1enyL6pvd_cDJqcn9cwq4JkEG1x_9faAu"
   }
 ]
